@@ -169,47 +169,126 @@
 //   `Jonas has ${team.friends.length} friends, and his best friend is called ${team.friends[0]}`
 // );
 
-const persons = {
-  person1: {
-    fullName: "Mark",
-    lastName: "Miller",
-    mass: 78,
-    height: 1.69,
-    calcBMI: function () {
-      const BMI = this.mass / (this.height * this.height);
-      return BMI;
-    },
-  },
+// const persons = {
+//   person1: {
+//     fullName: "Mark",
+//     lastName: "Miller",
+//     mass: 78,
+//     height: 1.69,
+//     calcBMI: function () {
+//       const BMI = this.mass / (this.height * this.height);
+//       return BMI;
+//     },
+//   },
 
-  person2: {
-    fullName: "John",
-    lastName: "Smith",
-    mass: 92,
-    height: 1.95,
-    calcBMI: function () {
-      const BMI = this.mass / (this.height * this.height);
-      return BMI;
-    },
-  },
+//   person2: {
+//     fullName: "John",
+//     lastName: "Smith",
+//     mass: 92,
+//     height: 1.95,
+//     calcBMI: function () {
+//       const BMI = this.mass / (this.height * this.height);
+//       return BMI;
+//     },
+//   },
 
-  summary: function () {
-    console.log(this.person2.calcBMI());
-    // const stringSummary = `${this.person1.calcBMI() > this.person2.calcBMI() ? "John Smith's" : "Mark Miller's"} BMI ${} }`;
+//   summary: function () {
+//     console.log(this.person2.calcBMI());
+//     // const stringSummary = `${this.person1.calcBMI() > this.person2.calcBMI() ? "John Smith's" : "Mark Miller's"} BMI ${} }`;
 
-    let stringSummary;
-    const aBMI = this.person1.calcBMI();
-    const bBMI = this.person2.calcBMI();
-    const aPerson = `${this.person1.fullName} ${this.person1.lastName}`;
-    const bPerson = `${this.person2.fullName} ${this.person2.lastName}`;
+//     let stringSummary;
+//     const aBMI = this.person1.calcBMI();
+//     const bBMI = this.person2.calcBMI();
+//     const aPerson = `${this.person1.fullName} ${this.person1.lastName}`;
+//     const bPerson = `${this.person2.fullName} ${this.person2.lastName}`;
 
-    if (aBMI > bBMI) {
-      stringSummary = `${aPerson}'s BMI (${aBMI}) is higher than ${bPerson}'s BMI (${bBMI})`;
-    } else {
-      stringSummary = `${bPerson}'s BMI (${bBMI}) is higher than ${aPerson}'s BMI (${aBMI})`;
-    }
+//     if (aBMI > bBMI) {
+//       stringSummary = `${aPerson}'s BMI (${aBMI}) is higher than ${bPerson}'s BMI (${bBMI})`;
+//     } else {
+//       stringSummary = `${bPerson}'s BMI (${bBMI}) is higher than ${aPerson}'s BMI (${aBMI})`;
+//     }
 
-    return stringSummary;
-  },
-};
+//     return stringSummary;
+//   },
+// };
 
-console.log(persons.summary());
+// console.log(persons.summary());
+
+const team = ["Jonas", "Scgmedtmann", 1991, ["michael", "rey"], true, "test"];
+
+// using continue, if its true continue will exit the current iteration and the line of code will not executed
+// for (let i = 0; i < team.length; i++) {
+//   if (typeof team[i] === "number") continue;
+//   console.log(team[i]);
+// }
+
+// using break, terminates the current iteration if its true
+// for (let i = 0; i < team.length; i++) {
+//   if (typeof team[i] === "number") break;
+//   console.log(team[i]);
+// }
+
+// backward loop
+// for (let i = team.length - 1; i >= 0; i--) {
+//   console.log(team[i]);
+// }
+
+// loop inside a loop
+// for (let i = 0; i < 4; i++) {
+//   console.log("Starting exercise");
+//   for (let r = 0; r < 6; r++) {
+//     console.log("Lift weights");
+//   }
+// }
+
+// while loop using a dice if 6 then stop
+// let i;
+
+// while (i !== 6) {
+//   i = Math.trunc(Math.random() * 6) + 1;
+//   console.log(`You rolled: ${i}`);
+// }
+
+// const calcTip = function (bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// };
+
+// /* Write your code below. Good luck! 🙂 */
+
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const tips = [];
+// const totals = [];
+
+// for (let i = 0; i < bills.length; i++) {
+//   tips.push(calcTip(bills[i]));
+//   totals.push(calcTip(bills[i]) + bills[i]);
+// }
+
+// console.log(tips);
+// console.log(totals);
+
+// calcAverage(tips);
+// calcAverage(totals);
+// calcAverage(bills);
+
+// function calcAverage(arr) {
+//   let all = 0;
+//   arr.forEach((item) => {
+//     all += item;
+//   });
+
+//   return all / arr.length;
+// }
+
+// console.log(calcAverage(tips));
+// console.log(calcAverage(totals));
+// console.log(calcAverage(bills));
+
+// function calcAverage(arr) {
+
+//   console.log(arr);
+//   return arr;
+// }
+
+// calcAverage();
+// console.log(calcAverage());
